@@ -1,0 +1,31 @@
+body{
+background:#050816;
+color:white;
+font-family:Poppins,sans-serif;
+}
+
+.history-container{
+width:90%;
+margin:50px auto;
+}
+
+h1{
+margin-bottom:30px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:#0f172a;
+}
+
+th,
+td{
+padding:15px;
+border:1px solid #1e293b;
+text-align:center;
+}
+
+th{
+background:#7c3aed;
+}
