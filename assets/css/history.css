@@ -1,31 +1,80 @@
-body{
-background:#050816;
-color:white;
-font-family:Poppins,sans-serif;
+
+body {
+    background: #050816;
+    color: white;
+    font-family: Poppins, sans-serif;
 }
 
-.history-container{
-width:90%;
-margin:50px auto;
+.history-container {
+    width: 90%;
+    margin: 50px auto;
 }
 
-h1{
-margin-bottom:30px;
+h1 {
+    margin-bottom: 30px;
 }
 
-table{
-width:100%;
-border-collapse:collapse;
-background:#0f172a;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #0f172a;
 }
 
 th,
-td{
-padding:15px;
-border:1px solid #1e293b;
-text-align:center;
+td {
+    padding: 15px;
+    border: 1px solid #1e293b;
+    text-align: center;
 }
 
-th{
-background:#7c3aed;
+th {
+    background: #7c3aed;
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Laptop */
+@media (max-width: 1200px) {
+    .history-container {
+        width: 94%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .history-container {
+        width: 94%;
+        margin: 35px auto;
+    }
+
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th,
+    td {
+        padding: 12px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .history-container {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    h1 {
+        margin-bottom: 22px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
 }

@@ -82,5 +82,53 @@
 
 </footer>
 
+    <div class="footer-bottom">
+        © 2026 InterviewIQ. All Rights Reserved.
+    </div>
+
+</footer>
+
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+const navButtons = document.querySelector(".nav-buttons");
+
+if (menuToggle && navLinks && navButtons) {
+
+    menuToggle.addEventListener("click", function () {
+
+        navLinks.classList.toggle("active");
+        navButtons.classList.toggle("active");
+
+        const isOpen = navLinks.classList.contains("active");
+
+        menuToggle.setAttribute("aria-expanded", isOpen);
+
+        menuToggle.innerHTML = isOpen
+            ? '<i class="fa-solid fa-xmark"></i>'
+            : '<i class="fa-solid fa-bars"></i>';
+
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+
+        link.addEventListener("click", function () {
+
+            navLinks.classList.remove("active");
+            navButtons.classList.remove("active");
+
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+
+        });
+
+    });
+
+}
+</script>
+
+</body>
+</html>
+
 </body>
 </html>

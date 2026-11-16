@@ -1,69 +1,154 @@
- body{
-            background:#050816;
-            color:#fff;
-            font-family:Poppins;
-        }
 
-        .container{
-            width:80%;
-            margin:50px auto;
-        }
+body {
+    background: #050816;
+    color: #fff;
+    font-family: Poppins;
+}
 
-        h1{
-            text-align:center;
-            color:#7c3aed;
-            margin-bottom:30px;
-        }
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
 
-        .role-buttons{
-            text-align:center;
-            margin-bottom:40px;
-        }
+h1 {
+    text-align: center;
+    color: #7c3aed;
+    margin-bottom: 30px;
+}
 
-        .role-buttons a{
-            padding:10px 20px;
-            margin:5px;
-            display:inline-block;
-            text-decoration:none;
-            border-radius:10px;
-            background:#0f172a;
-            color:white;
-            border:1px solid #1e293b;
-        }
+.role-buttons {
+    text-align: center;
+    margin-bottom: 40px;
+}
 
-        .role-buttons a:hover{
-            border-color:#7c3aed;
-        }
+.role-buttons a {
+    padding: 10px 20px;
+    margin: 5px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    background: #0f172a;
+    color: white;
+    border: 1px solid #1e293b;
+}
 
-        .roadmap{
-            display:flex;
-            flex-direction:column;
-            gap:15px;
-        }
+.role-buttons a:hover {
+    border-color: #7c3aed;
+}
 
-        .step{
-            background:#0f172a;
-            border:1px solid #1e293b;
-            padding:20px;
-            border-radius:12px;
-            display:flex;
-            align-items:center;
-            gap:15px;
-            transition:.3s;
-        }
+.roadmap {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-        .step:hover{
-            border-color:#7c3aed;
-            transform:translateX(5px);
-        }
+.step {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: .3s;
+}
 
-        .number{
-            width:40px;
-            height:40px;
-            background:#7c3aed;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            border-radius:50%;
-            font-weight:bold;
-        }
+.step:hover {
+    border-color: #7c3aed;
+    transform: translateX(5px);
+}
+
+.number {
+    width: 40px;
+    height: 40px;
+    background: #7c3aed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Laptop */
+@media (max-width: 1200px) {
+    .container {
+        width: 88%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .container {
+        width: 92%;
+        margin: 35px auto;
+    }
+
+    h1 {
+        margin-bottom: 25px;
+    }
+
+    .role-buttons {
+        margin-bottom: 30px;
+    }
+
+    .step {
+        padding: 18px;
+        gap: 12px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .container {
+        width: 94%;
+        margin: 25px auto;
+    }
+
+    h1 {
+        margin-bottom: 22px;
+    }
+
+    .role-buttons {
+        margin-bottom: 25px;
+    }
+
+    .role-buttons a {
+        padding: 9px 14px;
+        margin: 4px;
+    }
+
+    .roadmap {
+        gap: 12px;
+    }
+
+    .step {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .number {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Very small mobile */
+@media (max-width: 360px) {
+    .container {
+        width: 95%;
+    }
+
+    .step {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .role-buttons a {
+        padding: 8px 11px;
+    }
+}

@@ -1,77 +1,168 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
 }
 
-body{
-background:#050816;
-color:white;
+body {
+    background: #050816;
+    color: white;
 }
 
-.resume-container{
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:40px;
+.resume-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
 
-.resume-box{
-width:100%;
-max-width:700px;
-background:#0f172a;
-padding:40px;
-border-radius:25px;
-border:1px solid #1e293b;
+.resume-box {
+    width: 100%;
+    max-width: 700px;
+    background: #0f172a;
+    padding: 40px;
+    border-radius: 25px;
+    border: 1px solid #1e293b;
 }
 
-.resume-box h1{
-text-align:center;
-margin-bottom:10px;
+.resume-box h1 {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.resume-box p{
-text-align:center;
-color:#94a3b8;
-margin-bottom:30px;
+.resume-box p {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 30px;
 }
 
-.resume-box input{
-width:100%;
-padding:15px;
-background:#111827;
-border:1px solid #334155;
-border-radius:12px;
-color:white;
-margin-bottom:20px;
+.resume-box input {
+    width: 100%;
+    padding: 15px;
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    color: white;
+    margin-bottom: 20px;
 }
 
-.resume-box button{
-width:100%;
-padding:15px;
-border:none;
-border-radius:12px;
-background:#7c3aed;
-color:white;
-cursor:pointer;
-font-size:16px;
+.resume-box button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #7c3aed;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.result-box{
-margin-top:30px;
-padding:25px;
-background:#111827;
-border-radius:20px;
+.result-box {
+    margin-top: 30px;
+    padding: 25px;
+    background: #111827;
+    border-radius: 20px;
 }
 
-.result-box h2{
-color:#7c3aed;
-margin-bottom:20px;
+.result-box h2 {
+    color: #7c3aed;
+    margin-bottom: 20px;
 }
 
-.feedback{
-line-height:2;
-color:#cbd5e1;
+.feedback {
+    line-height: 2;
+    color: #cbd5e1;
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Laptop */
+@media (max-width: 1200px) {
+    .resume-container {
+        padding: 35px;
+    }
+
+    .resume-box {
+        max-width: 650px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .resume-container {
+        padding: 30px 20px;
+    }
+
+    .resume-box {
+        padding: 32px;
+    }
+
+    .resume-box p {
+        margin-bottom: 25px;
+    }
+
+    .result-box {
+        padding: 22px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .resume-container {
+        padding: 22px 12px;
+        align-items: flex-start;
+    }
+
+    .resume-box {
+        padding: 24px 18px;
+        border-radius: 20px;
+    }
+
+    .resume-box h1 {
+        margin-bottom: 12px;
+    }
+
+    .resume-box p {
+        margin-bottom: 22px;
+    }
+
+    .resume-box input {
+        padding: 13px;
+        margin-bottom: 15px;
+    }
+
+    .resume-box button {
+        padding: 14px;
+    }
+
+    .result-box {
+        margin-top: 22px;
+        padding: 18px;
+        overflow-wrap: anywhere;
+    }
+
+    .result-box h2 {
+        margin-bottom: 15px;
+    }
+
+    .feedback {
+        line-height: 1.8;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* Very small mobile */
+@media (max-width: 360px) {
+    .resume-container {
+        padding: 15px 10px;
+    }
+
+    .resume-box {
+        padding: 20px 14px;
+    }
 }

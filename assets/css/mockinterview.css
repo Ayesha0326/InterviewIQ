@@ -1,67 +1,151 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
 }
 
-body{
-background:#050816;
-color:white;
+body {
+    background: #050816;
+    color: white;
 }
 
-.interview-container{
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:40px;
+.interview-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
 
-.interview-box{
-width:100%;
-max-width:800px;
-background:#0f172a;
-padding:40px;
-border-radius:25px;
-border:1px solid #1e293b;
+.interview-box {
+    width: 100%;
+    max-width: 800px;
+    background: #0f172a;
+    padding: 40px;
+    border-radius: 25px;
+    border: 1px solid #1e293b;
 }
 
-.interview-box h1{
-text-align:center;
-margin-bottom:30px;
+.interview-box h1 {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .interview-box select,
-.interview-box textarea{
-width:100%;
-padding:15px;
-background:#111827;
-border:1px solid #334155;
-border-radius:12px;
-color:white;
-margin-bottom:20px;
+.interview-box textarea {
+    width: 100%;
+    padding: 15px;
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    color: white;
+    margin-bottom: 20px;
 }
 
-.interview-box textarea{
-height:180px;
-resize:none;
+.interview-box textarea {
+    height: 180px;
+    resize: none;
 }
 
-.interview-box button{
-width:100%;
-padding:15px;
-background:#7c3aed;
-border:none;
-border-radius:12px;
-color:white;
-cursor:pointer;
+.interview-box button {
+    width: 100%;
+    padding: 15px;
+    background: #7c3aed;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
 }
 
-.result{
-margin-top:25px;
-padding:20px;
-background:#111827;
-border-radius:15px;
-border-left:5px solid #7c3aed;
+.result {
+    margin-top: 25px;
+    padding: 20px;
+    background: #111827;
+    border-radius: 15px;
+    border-left: 5px solid #7c3aed;
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Laptop */
+@media (max-width: 1200px) {
+    .interview-container {
+        padding: 35px;
+    }
+
+    .interview-box {
+        max-width: 750px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .interview-container {
+        padding: 30px 20px;
+    }
+
+    .interview-box {
+        padding: 30px;
+    }
+
+    .interview-box h1 {
+        margin-bottom: 25px;
+    }
+
+    .interview-box select,
+    .interview-box textarea {
+        padding: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .interview-container {
+        padding: 20px 12px;
+        align-items: flex-start;
+    }
+
+    .interview-box {
+        padding: 24px 18px;
+        border-radius: 20px;
+    }
+
+    .interview-box h1 {
+        margin-bottom: 22px;
+    }
+
+    .interview-box select,
+    .interview-box textarea {
+        padding: 13px;
+        margin-bottom: 15px;
+    }
+
+    .interview-box textarea {
+        height: 160px;
+    }
+
+    .interview-box button {
+        padding: 14px;
+    }
+
+    .result {
+        padding: 16px;
+        margin-top: 20px;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* Very small mobile */
+@media (max-width: 360px) {
+    .interview-container {
+        padding: 15px 10px;
+    }
+
+    .interview-box {
+        padding: 20px 14px;
+    }
 }
